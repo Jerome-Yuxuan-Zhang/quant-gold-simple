@@ -45,10 +45,10 @@ dev = [
 quant-gold-v01 = "quant_gold.pipelines.v01_pipeline:main"
 
 [project.urls]
-Homepage = "https://github.com/<your-github-username>/quant_gold_simple"
-Repository = "https://github.com/<your-github-username>/quant_gold_simple"
-Issues = "https://github.com/<your-github-username>/quant_gold_simple/issues"
-Documentation = "https://github.com/<your-github-username>/quant_gold_simple/tree/main/docs"
+Homepage = "https://github.com/Jerome-Yuxuan-Zhang/quant-gold-simple"
+Repository = "https://github.com/Jerome-Yuxuan-Zhang/quant-gold-simple"
+Issues = "https://github.com/Jerome-Yuxuan-Zhang/quant-gold-simple/issues"
+Documentation = "https://github.com/Jerome-Yuxuan-Zhang/quant-gold-simple/tree/main/docs"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/quant_gold"]
