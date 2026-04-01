@@ -1,0 +1,35 @@
+name: Bug report
+description: Report a reproducible bug in data ingestion, modeling, backtesting, or docs.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong? What did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Paste commands, config changes, and the exact sequence needed to reproduce the issue.
+      placeholder: |
+        1. Run `uv sync --extra dev`
+        2. Run `uv run quant-gold-v01 --mode sample`
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Python version, OS, and any relevant dependency or API context.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste the traceback or attach a screenshot when relevant.

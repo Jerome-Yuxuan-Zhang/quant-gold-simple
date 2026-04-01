@@ -1,0 +1,119 @@
+{
+  "datasets": [
+    {
+      "name": "gold_close",
+      "source": "alpha_vantage",
+      "remote_id": "GOLD",
+      "description": "Gold daily close from Alpha Vantage GOLD_SILVER_HISTORY.",
+      "native_frequency": "daily",
+      "unit": "USD per troy ounce",
+      "params": {
+        "function": "GOLD_SILVER_HISTORY",
+        "symbol": "GOLD",
+        "interval": "daily"
+      }
+    },
+    {
+      "name": "silver_close",
+      "source": "alpha_vantage",
+      "remote_id": "SILVER",
+      "description": "Silver daily close from Alpha Vantage GOLD_SILVER_HISTORY.",
+      "native_frequency": "daily",
+      "unit": "USD per troy ounce",
+      "params": {
+        "function": "GOLD_SILVER_HISTORY",
+        "symbol": "SILVER",
+        "interval": "daily"
+      }
+    },
+    {
+      "name": "yield_2y",
+      "source": "fred",
+      "remote_id": "DGS2",
+      "description": "Market Yield on U.S. Treasury Securities at 2-Year Constant Maturity.",
+      "native_frequency": "daily",
+      "unit": "Percent",
+      "params": {
+        "series_id": "DGS2"
+      }
+    },
+    {
+      "name": "yield_10y",
+      "source": "fred",
+      "remote_id": "DGS10",
+      "description": "Market Yield on U.S. Treasury Securities at 10-Year Constant Maturity.",
+      "native_frequency": "daily",
+      "unit": "Percent",
+      "params": {
+        "series_id": "DGS10"
+      }
+    },
+    {
+      "name": "real_yield_proxy",
+      "source": "fred",
+      "remote_id": "DFII10",
+      "description": "10-Year Treasury Inflation-Indexed Security, a real-yield proxy.",
+      "native_frequency": "daily",
+      "unit": "Percent",
+      "params": {
+        "series_id": "DFII10"
+      }
+    },
+    {
+      "name": "breakeven_proxy",
+      "source": "fred",
+      "remote_id": "T10YIE",
+      "description": "10-Year Breakeven Inflation Rate.",
+      "native_frequency": "daily",
+      "unit": "Percent",
+      "params": {
+        "series_id": "T10YIE"
+      }
+    },
+    {
+      "name": "usd_proxy",
+      "source": "fred",
+      "remote_id": "DTWEXBGS",
+      "description": "Nominal Broad U.S. Dollar Index.",
+      "native_frequency": "daily",
+      "unit": "Index Jan 2006=100",
+      "params": {
+        "series_id": "DTWEXBGS"
+      }
+    },
+    {
+      "name": "vix_proxy",
+      "source": "fred",
+      "remote_id": "VIXCLS",
+      "description": "CBOE Volatility Index.",
+      "native_frequency": "daily",
+      "unit": "Index",
+      "params": {
+        "series_id": "VIXCLS"
+      }
+    },
+    {
+      "name": "equity_proxy",
+      "source": "fred",
+      "remote_id": "SP500",
+      "description": "S&P 500 index level.",
+      "native_frequency": "daily",
+      "unit": "Index",
+      "params": {
+        "series_id": "SP500"
+      }
+    },
+    {
+      "name": "oil_close",
+      "source": "fred",
+      "remote_id": "DCOILWTICO",
+      "description": "Crude Oil Prices: West Texas Intermediate (WTI).",
+      "native_frequency": "daily",
+      "unit": "USD per barrel",
+      "params": {
+        "series_id": "DCOILWTICO"
+      }
+    }
+  ]
+}
+
